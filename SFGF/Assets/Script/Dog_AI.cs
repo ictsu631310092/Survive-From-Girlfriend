@@ -8,8 +8,17 @@ public class Dog_AI : MonoBehaviour
 {
     public NavMeshAgent enemy;
     public Transform player;
+    public GameObject Dog;
 
     // Start is called before the first frame update
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "Player")
+        {
+            Destroy(Dog, 0.25f);
+            spawnd.MaxNumDog = spawnd.MaxNumDog +1;
+        }
+    }
     void Start()
     {
         enemy = GetComponent<NavMeshAgent>();

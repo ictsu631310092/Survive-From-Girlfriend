@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class spawnd : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class spawnd : MonoBehaviour
     public Transform Dout1;
     public Transform Dout2;
     public Transform Dout3;
+    public float SpawndDogTime = 5.0f;
+    float SpawndDogTimeMax = 5.0f;
+    public static int MaxNumDog = 5;
 
     public void GenerateD()
     {
@@ -32,12 +36,23 @@ public class spawnd : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        MaxNumDog = MaxNumDog - 1;
+        SpawndDogTime = SpawndDogTimeMax;
         GenerateD();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        SpawndDogTime -= Time.deltaTime;
+        if (SpawndDogTime <= 0)
+        {
+            if (MaxNumDog > 0)
+            {
+                GenerateD();
+                MaxNumDog--;
+            }
+            SpawndDogTime = SpawndDogTimeMax;
+        }
     }
 }

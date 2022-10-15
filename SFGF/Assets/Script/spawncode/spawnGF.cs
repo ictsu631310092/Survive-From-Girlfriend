@@ -19,20 +19,6 @@ public class spawnGF : MonoBehaviour
     float maxtime;
 
     // Start is called before the first frame update
-    void OnCollisionEnter(Collision collision)
-    {
-        if (true)
-        {
-
-        }
-    }
-    void OnCollisionExit(Collision collision)
-    {
-        if (true)
-        {
-
-        }
-    }
     public void GenerateGF()
     {
         GFrandom = Random.Range(1, 9);
