@@ -16,7 +16,7 @@ public class Dog_AI : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
             Destroy(Dog, 0.25f);
-            spawnd.MaxNumDog = spawnd.MaxNumDog +1;
+            spawnd.NumDog = spawnd.NumDog +1;
         }
     }
     void Start()

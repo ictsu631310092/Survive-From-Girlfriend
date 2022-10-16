@@ -5364,7 +5364,8 @@ MonoBehaviour:
   Dout1: {fileID: 659927333}
   Dout2: {fileID: 1621460638}
   Dout3: {fileID: 1754745176}
-  SpawndDogTime: 3
+  SpawndDogTime: 5
+  MaxNumDog: 3
 --- !u!1 &1263519335
 GameObject:
   m_ObjectHideFlags: 0
@@ -8776,46 +8777,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 624076560, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 863176130, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1156378883, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1377706180, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1395128210, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1550921440, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1594103762, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.44
-      objectReference: {fileID: 0}
     - target: {fileID: 1594103763, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
       propertyPath: outGFfabs
       value: 
       objectReference: {fileID: 1145928752}
-    - target: {fileID: 1885370397, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1889323384, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1897155666, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
       propertyPath: ButtonC
       value: 
@@ -8848,14 +8813,6 @@ PrefabInstance:
       propertyPath: MerchantTalk2
       value: 
       objectReference: {fileID: 221619316}
-    - target: {fileID: 1177391786016878780, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 1177391786016878780, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.511
-      objectReference: {fileID: 0}
     - target: {fileID: 1177391786236463154, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
       propertyPath: m_Name
       value: Player
@@ -8924,10 +8881,6 @@ PrefabInstance:
       propertyPath: RaedyBorrowMoney
       value: 
       objectReference: {fileID: 253687649}
-    - target: {fileID: 4611209283787740172, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
 --- !u!4 &1177391786160987593 stripped
@@ -9145,6 +9098,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2039722699}
     - target: {fileID: 5388499328121586468, guid: 11c663ad8d179734a8cdf40315b3497a, type: 3}
+      propertyPath: angle
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388499328121586468, guid: 11c663ad8d179734a8cdf40315b3497a, type: 3}
+      propertyPath: radius
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388499328121586468, guid: 11c663ad8d179734a8cdf40315b3497a, type: 3}
       propertyPath: playerRef
       value: 
       objectReference: {fileID: 1721125665}
@@ -9199,6 +9160,10 @@ PrefabInstance:
     - target: {fileID: 5637687602101996752, guid: 11c663ad8d179734a8cdf40315b3497a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637687602142275340, guid: 11c663ad8d179734a8cdf40315b3497a, type: 3}
+      propertyPath: m_Speed
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11c663ad8d179734a8cdf40315b3497a, type: 3}

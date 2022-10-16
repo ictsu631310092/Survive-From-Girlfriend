@@ -14,7 +14,8 @@ public class spawnd : MonoBehaviour
     public Transform Dout3;
     public float SpawndDogTime = 5.0f;
     float SpawndDogTimeMax = 5.0f;
-    public static int MaxNumDog = 5;
+    public static int NumDog = 5;
+    public int MaxNumDog = 5;
 
     public void GenerateD()
     {
@@ -36,7 +37,8 @@ public class spawnd : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MaxNumDog = MaxNumDog - 1;
+        NumDog = MaxNumDog;
+        NumDog = NumDog - 1;
         SpawndDogTime = SpawndDogTimeMax;
         GenerateD();
     }
@@ -47,10 +49,10 @@ public class spawnd : MonoBehaviour
         SpawndDogTime -= Time.deltaTime;
         if (SpawndDogTime <= 0)
         {
-            if (MaxNumDog > 0)
+            if (NumDog > 0)
             {
                 GenerateD();
-                MaxNumDog--;
+                NumDog--;
             }
             SpawndDogTime = SpawndDogTimeMax;
         }
