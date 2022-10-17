@@ -35,6 +35,9 @@ public class manumanager : MonoBehaviour
         time = 0.0f;
         Time.timeScale = 1;
         Cursor.visible = false;
+        friendmoney._friendmoney = 50;
+        friendmoney2._friendmoney = 50;
+        friendmoney3._friendmoney = 50;
         itemmanager.moneyhave = 0;
         itemmanager.haveChocolate = false;
         itemmanager.haveDoll = false;

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4423035882570888140}
   - component: {fileID: 4423035882570888143}
   - component: {fileID: 4423035882570888142}
-  - component: {fileID: 4423035882570888137}
   - component: {fileID: 4423035882570888146}
   - component: {fileID: 543321774294029074}
   - component: {fileID: 8744574247442701219}
@@ -89,20 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &4423035882570888137
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4423035882570888136}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &4423035882570888146
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -184,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3f8d4514280146d40b3eddf312b1c256, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3f8d4514280146d40b3eddf312b1c256, type: 3}
       propertyPath: m_LocalPosition.z
