@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class FRandom_walk : MonoBehaviour
 {
+    public Animator F1Animator;
+
     private NavMeshAgent agent;
 
     public float radius;
@@ -23,6 +25,15 @@ public class FRandom_walk : MonoBehaviour
                 agent.SetDestination(GetPoint.Instance.GetRandomPoint(transform, radius));
             }
         }
+        if (BorrowMoney.canBorrow == false)
+        {
+            F1Animator.SetBool("walkking", true);
+        }
+        else if (BorrowMoney.canBorrow == true)
+        {
+            F1Animator.SetBool("walkking", false);
+        }
+
     }
 
 #if UNITY_EDITOR

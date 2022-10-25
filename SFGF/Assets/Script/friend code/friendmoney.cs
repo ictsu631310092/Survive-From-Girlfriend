@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class friendmoney : MonoBehaviour
 {
     public static int _friendmoney = 50;
+
     // Start is called before the first frame update
     void Start()
     {
