@@ -21,7 +21,6 @@ public class Random_walk : MonoBehaviour
             agent.SetDestination(GetPoint.Instance.GetRandomPoint(transform, radius));
         }
     }
-
 #if UNITY_EDITOR
 
     private void OnDrawGizmos()

@@ -6,6 +6,7 @@ using UnityEngine.AI;
 
 public class Dog_AI : MonoBehaviour
 {
+    public Animator DogAnimator;
     public NavMeshAgent enemy;
     public Transform player;
     public GameObject Dog;
@@ -34,6 +35,14 @@ public class Dog_AI : MonoBehaviour
         else if (FieldOfView.canSeePlayer == false)
         {
 
+        }
+        if (FieldOfView.canSeePlayer == false)
+        {
+            DogAnimator.SetBool("walkking", true);
+        }
+        else if (FieldOfView.canSeePlayer == true)
+        {
+            DogAnimator.SetBool("walkking", false);
         }
     }
 }

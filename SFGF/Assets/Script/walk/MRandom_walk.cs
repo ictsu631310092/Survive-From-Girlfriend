@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class MRandom_walk : MonoBehaviour
 {
+    public Animator M1Animator; 
+
     private NavMeshAgent agent;
 
     public float radius;
@@ -22,6 +24,14 @@ public class MRandom_walk : MonoBehaviour
             {
                 agent.SetDestination(GetPoint.Instance.GetRandomPoint(transform, radius));
             }
+        }
+        if (merchant.canBuy == false)
+        {
+            M1Animator.SetBool("walkking", true);
+        }
+        else if (merchant.canBuy == true)
+        {
+            M1Animator.SetBool("walkking", false);
         }
     }
 
