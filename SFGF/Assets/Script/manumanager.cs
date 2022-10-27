@@ -9,6 +9,7 @@ public class manumanager : MonoBehaviour
     public GameObject PauseUI;
     public GameObject ESCUI;
     public GameObject HowToPlayUI;
+    public GameObject CreditsUI;
     float time = 0.0f;
     Text timeText;
     public void PlayGame()
@@ -23,6 +24,14 @@ public class manumanager : MonoBehaviour
     public void closeHowToPlay()
     {
         HowToPlayUI.SetActive(false);
+    }
+    public void openCreditsUI()
+    {
+        CreditsUI.SetActive(true);
+    }
+    public void closeCreditsUI()
+    {
+        CreditsUI.SetActive(false);
     }
     public void ResumeGame()
     {
