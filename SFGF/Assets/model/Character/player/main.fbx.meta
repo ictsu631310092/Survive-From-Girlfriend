@@ -18,6 +18,9 @@ ModelImporter:
   - first:
       74: 5616908473319789945
     second: R=st
+  - first:
+      74: -998496362607748373
+    second: Take 001
   externalObjects: {}
   materials:
     materialImportMode: 2
