@@ -6,6 +6,7 @@ using UnityEngine.AI;
 
 public class GF_AI : MonoBehaviour
 {
+    public Animator GFAnimator;
     public NavMeshAgent enemy;
     public Transform player;
     public Transform tenemy;
@@ -26,6 +27,14 @@ public class GF_AI : MonoBehaviour
         else if (FieldOfView1.canSeePlayer != true)
         {
 
+        }
+        if (FieldOfView1.canSeePlayer == false)
+        {
+            GFAnimator.SetBool("walkking", true);
+        }
+        else if (FieldOfView1.canSeePlayer == true)
+        {
+            GFAnimator.SetBool("walkking", false);
         }
     }
 }
