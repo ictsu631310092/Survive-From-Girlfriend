@@ -5,14 +5,17 @@ using UnityEngine;
 public class spawnf : MonoBehaviour
 {
     GameObject clonef1;
-    public GameObject outF1fabs;
     GameObject clonef2;
-    public GameObject outF2fabs;
     GameObject clonef3;
+
+    public GameObject outF1fabs;
+    public GameObject outF2fabs;
     public GameObject outF3fabs;
+
     int f1random;
     int f2random;
     int f3random;
+
     public Transform f1out;
     public Transform f2out;
     public Transform f3out;
@@ -23,9 +26,9 @@ public class spawnf : MonoBehaviour
     public Transform f2out3;
     public Transform f3out3;
 
-    public void GenerateF()
+    public void RadomNam()
     {
-        f1random = Random.Range(1,10);
+        f1random = Random.Range(1, 10);
         do
         {
             f2random = Random.Range(1, 10);
@@ -34,6 +37,9 @@ public class spawnf : MonoBehaviour
         {
             f3random = Random.Range(1, 10);
         } while (f2random == f3random || f1random == f3random);
+    }
+    public void GenerateF()
+    {
         clonef1 = Instantiate(outF1fabs);
         clonef2 = Instantiate(outF2fabs);
         clonef3 = Instantiate(outF3fabs);
@@ -149,6 +155,7 @@ public class spawnf : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        RadomNam();
         GenerateF();
     }
 
