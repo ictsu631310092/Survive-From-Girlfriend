@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class walking_code : MonoBehaviour
 {
+    public Animator MainAnimator;
     public float walkingSpeed = 7.5f;
     bool isRunning = false;
     public float runningSpeed = 15f;
@@ -127,6 +128,8 @@ public class walking_code : MonoBehaviour
         if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
         {
             moveDirection.y = jumpSpeed;
+            MainAnimator.SetBool("jumpUp", true);
+            MainAnimator.SetBool("jumpDown", false);
         }
         else
         {
@@ -146,6 +149,38 @@ public class walking_code : MonoBehaviour
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+        }
+
+        if (isRunning == true)
+        {
+            MainAnimator.SetBool("running", true);
+        }
+        else if (isRunning == false)
+        {
+            MainAnimator.SetBool("running", false);
+        }
+
+        float dirx;
+        float diry;
+        dirx = Input.GetAxis("Horizontal");
+        diry = Input.GetAxis("Vertical");
+        MainAnimator.SetFloat("WalkH", Mathf.Abs(dirx)+ Mathf.Abs(diry));
+
+        if (characterController.isGrounded)
+        {
+            MainAnimator.SetBool("isGrounded", true);
+        }
+        else if (characterController.isGrounded == false)
+        {
+            MainAnimator.SetBool("isGrounded", false);
+        }
+        if (Input.GetButton("Jump"))
+        {
+            MainAnimator.SetBool("Jumpping", true);
+        }
+        if (Input.GetButton("Jump") == false)
+        {
+            MainAnimator.SetBool("Jumpping", false);
         }
     }
 }

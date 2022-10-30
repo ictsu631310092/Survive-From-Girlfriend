@@ -59,7 +59,6 @@ public class spawnGF : MonoBehaviour
     void Start()
     {
         maxtime = time;
-        GenerateGF();
     }
 
     // Update is called once per frame

@@ -13,6 +13,7 @@ public class merchant : MonoBehaviour
     public GameObject ButtonD;
     public GameObject ButtonW1;
     public GameObject ButtonW2;
+
     public int priceC = 50;
     public int priceD = 75;
     public int priceW = 10;

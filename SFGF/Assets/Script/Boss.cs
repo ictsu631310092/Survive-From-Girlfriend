@@ -7,6 +7,8 @@ public class Boss : MonoBehaviour
 {
     public GameObject GameoverUI;
     public GameObject winnerUI;
+    public GameObject MerchantUI1;
+    public GameObject MerchantUI2;
 
     private void OnTriggerEnter(Collider collider)
     {
@@ -22,6 +24,8 @@ public class Boss : MonoBehaviour
                 Cursor.visible = true;
                 GameoverUI.SetActive(true);
             }
+            MerchantUI1.SetActive(false);
+            MerchantUI2.SetActive(false);
         }
     }
     // Start is called before the first frame update
