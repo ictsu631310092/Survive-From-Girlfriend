@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 1
-  controlID: 13448
+  controlID: 20277
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 13449
+  controlID: 20278
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 13450
+  controlID: 20279
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,8 +216,8 @@ MonoBehaviour:
     y: 0
     width: 931
     height: 485
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -244,8 +244,8 @@ MonoBehaviour:
     y: 485
     width: 931
     height: 462
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: LightingWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -270,14 +270,14 @@ MonoBehaviour:
     y: 0
     width: 312
     height: 947
-  m_MinSize: {x: 392, y: 411}
+  m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
   - {fileID: 20}
-  m_Selected: 2
+  m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
@@ -430,7 +430,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: e0deffff2ef4ffff5e66000074660000b06c0000026f0000
+      m_ExpandedIDs: a61dfbffd6a8fbffdea8fbff8ee4fcffe417feffe817feff401afeff3e5bfeffae73feffc4a5feffc8a5feff32acfeff88c1feff40ccfeff48dbfeff4cdbfeff40e8ffffa0e9fffff2e9ffff78f8ffff0cfbffffd85c0000a05d0000ca5e0000025f0000245f0000b0600000fc6100003c630000ea650000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -597,9 +597,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: -180, y: -61}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 3
       id: Scene View/Navmesh Display
       index: 4
       layout: 4
@@ -679,9 +679,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -27.191006, y: -0.58292496, z: 31.689348}
+    m_Target: {x: -0.9755273, y: -3.8501203, z: 57.603992}
     speed: 2
-    m_Value: {x: -27.191006, y: -0.58292496, z: 31.689348}
+    m_Value: {x: 0.64277554, y: -3.9305315, z: 57.124325}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -728,13 +728,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.089117974, y: 0.083063774, z: -0.0066830306, w: 0.99350697}
+    m_Target: {x: 0.09836631, y: 0.0026998206, z: 0.0050530136, w: 0.99631023}
     speed: 2
-    m_Value: {x: 0.08902144, y: 0.08447194, z: -0.0068100896, w: 0.9924179}
+    m_Value: {x: 0.09675846, y: 0.002689054, z: 0.0050511626, w: 0.9952914}
   m_Size:
-    m_Target: 15.881455
+    m_Target: 35.837437
     speed: 2
-    m_Value: 15.197565
+    m_Value: 34.294197
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1023,22 +1023,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/model/Building/0.UV Building
+    - Assets/model/Building/0.UV Building/Texture_wall
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/model/Building/0.UV Building
+  - Assets/model/Building/0.UV Building/Texture_wall
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\USER\Documents\GitHub\Survive-From-Girlfriend\SFGF
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7e7d0000
-    m_LastClickedID: 32126
-    m_ExpandedIDs: 000000007c7d00007e7d0000807d0000827d0000847d00001e7e0000207e000000ca9a3b
+    m_SelectedIDs: 607b0000
+    m_LastClickedID: 31584
+    m_ExpandedIDs: 00000000ba7a0000bc7a0000be7a0000c07a0000c27a0000c47a0000c67a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1066,7 +1066,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007c7d00007e7d0000807d0000827d0000847d00001e7e0000207e000000ca9a3b
+    m_ExpandedIDs: 00000000ba7a0000bc7a0000be7a0000c07a0000c27a0000c47a0000c67a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 749114693808769904}
   - component: {fileID: 8778307362597751748}
-  - component: {fileID: 8778307362597751747}
+  - component: {fileID: 1581140093}
+  - component: {fileID: 1581140092}
   m_Layer: 0
   m_Name: Wall_3
   m_TagString: Untagged
@@ -47,7 +48,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.05, y: 10, z: 1}
   m_Center: {x: 0, y: 4, z: 0}
---- !u!208 &8778307362597751747
+--- !u!65 &1581140093
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751625377849394646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.05, y: 10, z: 1}
+  m_Center: {x: 0, y: 4, z: 0}
+--- !u!208 &1581140092
 NavMeshObstacle:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,7 +138,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 785f3cd67901b9b468ead3ee2d93f274, type: 2}
+  - {fileID: 2100000, guid: 496ba9a4557e11d42926d1baa1c7959e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
