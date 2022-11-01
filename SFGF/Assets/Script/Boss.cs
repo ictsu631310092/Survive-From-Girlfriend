@@ -5,10 +5,7 @@ using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
-    public GameObject GameoverUI;
-    public GameObject winnerUI;
-    public GameObject MerchantUI1;
-    public GameObject MerchantUI2;
+
 
     private void OnTriggerEnter(Collider collider)
     {
@@ -17,22 +14,19 @@ public class Boss : MonoBehaviour
             if (itemmanager.haveChocolate == true && itemmanager.haveDoll == true)
             {
                 Cursor.visible = true;
-                winnerUI.SetActive(true);
+                manumanager.OpenwinnerUI = true;
             }
             else
             {
                 Cursor.visible = true;
-                GameoverUI.SetActive(true);
+                manumanager.OpenGameoverUI = true;
             }
-            MerchantUI1.SetActive(false);
-            MerchantUI2.SetActive(false);
         }
     }
     // Start is called before the first frame update
     void Start()
     {
-        GameoverUI.SetActive(false);
-        winnerUI.SetActive(false);
+
     }
 
     // Update is called once per frame

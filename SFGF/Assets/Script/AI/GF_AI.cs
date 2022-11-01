@@ -14,7 +14,7 @@ public class GF_AI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //enemy = GetComponent<NavMeshAgent>();
+        enemy = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame

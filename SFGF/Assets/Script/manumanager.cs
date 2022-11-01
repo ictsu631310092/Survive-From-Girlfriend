@@ -12,6 +12,16 @@ public class manumanager : MonoBehaviour
     public GameObject CreditsUI;
     float time = 0.0f;
     Text timeText;
+
+    public GameObject GameoverUI;
+    public GameObject winnerUI;
+    public GameObject MerchantUI1;
+    public GameObject MerchantUI2;
+    public static bool OpenGameoverUI = false;
+    public static bool OpenwinnerUI = false;
+    public static bool M1UI = false;
+    public static bool M2UI = false;
+
     public void PlayGame()
     {
         SceneManager.LoadScene("PlayGame");
@@ -65,9 +75,10 @@ public class manumanager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameoverUI.SetActive(false);
+        winnerUI.SetActive(false);
         //ESCUI.SetActive(true);
         PauseUI.SetActive(false);
-        //GameoverUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -85,10 +96,25 @@ public class manumanager : MonoBehaviour
             PauseUI.SetActive(true); //แสดงหน้าต่างหยุด
             Time.timeScale = 0; //หยุดเวลาในเกม
             Cursor.visible = true;
+            MerchantUI1.SetActive(false);
+            MerchantUI2.SetActive(false);
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale == 0)
         {
             ResumeGame();
+        }
+
+        if (OpenwinnerUI == true)
+        {
+            winnerUI.SetActive(true);
+            MerchantUI1.SetActive(false);
+            MerchantUI2.SetActive(false);
+        }
+        if (OpenGameoverUI == true)
+        {
+            GameoverUI.SetActive(true);
+            MerchantUI1.SetActive(false);
+            MerchantUI2.SetActive(false);
         }
     }
 }

@@ -131,10 +131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e66de768f12b114eb63f171168d7883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameoverUI: {fileID: 0}
-  winnerUI: {fileID: 0}
-  MerchantUI1: {fileID: 0}
-  MerchantUI2: {fileID: 0}
 --- !u!54 &5006987397948040362
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -200,7 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GFAnimator: {fileID: 2259156176087855105}
   enemy: {fileID: 5637687602142275340}
-  player: {fileID: 0}
+  player: {fileID: 1177391786236464072, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
   tenemy: {fileID: 5637687602101996752}
 --- !u!114 &5388499328121586468
 MonoBehaviour:
@@ -216,7 +212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 25
   angle: 150
-  playerRef: {fileID: 0}
+  playerRef: {fileID: 1177391786236463154, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
   targetMask:
     serializedVersion: 2
     m_Bits: 256
