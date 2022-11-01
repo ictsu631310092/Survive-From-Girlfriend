@@ -63,6 +63,9 @@ public class manumanager : MonoBehaviour
         itemmanager.haveWater = false;
         itemmanager.haveWater2 = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameoverUI.SetActive(false);
+        winnerUI.SetActive(false);
+        PauseUI.SetActive(false);
     }
     public void backgame()
     {

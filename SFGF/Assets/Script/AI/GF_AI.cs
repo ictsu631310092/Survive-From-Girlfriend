@@ -12,8 +12,10 @@ public class GF_AI : MonoBehaviour
     public Transform tenemy;
     int i;
 
-    public AudioClip sfxBullet; //เชื่อมเสียงกระสูน
-    public AudioSource sfxAudioSource; //เชื่องเสียง
+    public AudioClip sfxshesay; //เชื่อมเสียงกระสูน
+    public AudioClip sfxsheiscome;
+    public AudioSource sfxAudioSource_shesay;
+    public AudioSource sfxAudioSource_shecome;//เชื่องเสียง
 
     // Start is called before the first frame update
     void Start()
@@ -27,10 +29,6 @@ public class GF_AI : MonoBehaviour
         if (FieldOfView1.canSeePlayer == true)
         {
             enemy.SetDestination(player.position);
-            for (i = 0; i < 2; i++)
-            {
-                sfxAudioSource.PlayOneShot(sfxBullet);
-            }
         }
         else if (FieldOfView1.canSeePlayer != true)
         {
@@ -43,6 +41,14 @@ public class GF_AI : MonoBehaviour
         else if (FieldOfView1.canSeePlayer == true)
         {
             GFAnimator.SetBool("walkking", false);
+        }
+        if (FieldOfView1.canSeePlayer == true)
+        {
+            for (i = 0; i < 2; i++)
+            {
+                sfxAudioSource_shesay.PlayOneShot(sfxshesay);
+            }
+            sfxAudioSource_shecome.PlayOneShot(sfxsheiscome);
         }
     }
 }

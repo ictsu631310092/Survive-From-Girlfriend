@@ -198,8 +198,10 @@ MonoBehaviour:
   enemy: {fileID: 5637687602142275340}
   player: {fileID: 0}
   tenemy: {fileID: 5637687602101996752}
-  sfxBullet: {fileID: 8300000, guid: 3ecbcd7535fce27479dc9d51b3f48a9f, type: 3}
-  sfxAudioSource: {fileID: 0}
+  sfxshesay: {fileID: 8300000, guid: 3ecbcd7535fce27479dc9d51b3f48a9f, type: 3}
+  sfxsheiscome: {fileID: 8300000, guid: c065be5b941594a4080429797d9157c6, type: 3}
+  sfxAudioSource_shesay: {fileID: 0}
+  sfxAudioSource_shecome: {fileID: 0}
 --- !u!114 &5388499328121586468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,7 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 25
-  angle: 150
+  angle: 270
   playerRef: {fileID: 1177391786236463154, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
   targetMask:
     serializedVersion: 2

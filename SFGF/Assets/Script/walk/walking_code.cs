@@ -89,11 +89,11 @@ public class walking_code : MonoBehaviour
         }
         if (hitDog == true)
         {
-            DebutIcon.SetActive(true);
-            useStamina = 20;
             if (DebutDogTime >= 0)
             {
                 DebutDogTime -= Time.deltaTime;
+                DebutIcon.SetActive(true);
+                useStamina = 20;
             }
             if (DebutDogTime == 0 || DebutDogTime <=0)
             {

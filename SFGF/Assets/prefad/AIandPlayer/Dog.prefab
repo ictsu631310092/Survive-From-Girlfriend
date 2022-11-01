@@ -148,7 +148,7 @@ MonoBehaviour:
   DogAnimator: {fileID: 4587384003969293548}
   enemy: {fileID: 2904622831811294426}
   player: {fileID: 0}
-  Dog: {fileID: 0}
+  Dog: {fileID: 8569237486430773212}
 --- !u!195 &2904622831811294426
 NavMeshAgent:
   m_ObjectHideFlags: 0

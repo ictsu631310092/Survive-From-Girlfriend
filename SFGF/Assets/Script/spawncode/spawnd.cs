@@ -56,5 +56,6 @@ public class spawnd : MonoBehaviour
             }
             SpawndDogTime = SpawndDogTimeMax;
         }
+        Debug.Log(NumDog);
     }
 }
