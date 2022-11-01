@@ -10,6 +10,10 @@ public class GF_AI : MonoBehaviour
     public NavMeshAgent enemy;
     public Transform player;
     public Transform tenemy;
+    int i;
+
+    public AudioClip sfxBullet; //เชื่อมเสียงกระสูน
+    public AudioSource sfxAudioSource; //เชื่องเสียง
 
     // Start is called before the first frame update
     void Start()
@@ -23,10 +27,14 @@ public class GF_AI : MonoBehaviour
         if (FieldOfView1.canSeePlayer == true)
         {
             enemy.SetDestination(player.position);
+            for (i = 0; i < 2; i++)
+            {
+                sfxAudioSource.PlayOneShot(sfxBullet);
+            }
         }
         else if (FieldOfView1.canSeePlayer != true)
         {
-
+            i = 0;
         }
         if (FieldOfView1.canSeePlayer == false)
         {

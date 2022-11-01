@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ea95108b9181d4a96df2169c700a5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 10
+  radius: 25
 --- !u!114 &5514529452674212881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,8 +196,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GFAnimator: {fileID: 2259156176087855105}
   enemy: {fileID: 5637687602142275340}
-  player: {fileID: 1177391786236464072, guid: 7ac4e9bb6d2638d449efb6e8a784c3c5, type: 3}
+  player: {fileID: 0}
   tenemy: {fileID: 5637687602101996752}
+  sfxBullet: {fileID: 8300000, guid: 3ecbcd7535fce27479dc9d51b3f48a9f, type: 3}
+  sfxAudioSource: {fileID: 0}
 --- !u!114 &5388499328121586468
 MonoBehaviour:
   m_ObjectHideFlags: 0

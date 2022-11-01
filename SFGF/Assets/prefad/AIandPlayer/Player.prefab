@@ -559,7 +559,7 @@ MonoBehaviour:
   gf6out: {fileID: 1550921438}
   gf7out: {fileID: 1156378881}
   gf8out: {fileID: 1377706178}
-  time: 20
+  time: 15
 --- !u!1 &1885370394
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +743,7 @@ GameObject:
   - component: {fileID: 1177391786236463155}
   - component: {fileID: 1177391786236464073}
   - component: {fileID: 1177391786236464074}
+  - component: {fileID: 6673710746504778633}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -930,6 +931,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: -0.25, z: 0}
+--- !u!114 &6673710746504778633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177391786236463154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0681f6943cfe7f24eaf8d638c89c3004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxBullet: {fileID: 8300000, guid: 3ecbcd7535fce27479dc9d51b3f48a9f, type: 3}
+  sfxAudioSource: {fileID: 0}
 --- !u!1 &6694065692701549814
 GameObject:
   m_ObjectHideFlags: 0
