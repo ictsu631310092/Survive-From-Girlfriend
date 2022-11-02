@@ -16,8 +16,8 @@ public class walking_code : MonoBehaviour
     public float lookXLimit = 45.0f;
     public Slider StaminaSlider;
     public static int Maxstamina = 1000;
-    public int useStamina = 10;
-    public int forceStamina = 5;
+    public int useStamina = 3;
+    public int forceStamina = 1;
     public float DebutDogTime = 5.0f;
     bool hitDog = false;
     public GameObject DebutIcon;
@@ -93,19 +93,19 @@ public class walking_code : MonoBehaviour
             {
                 DebutDogTime -= Time.deltaTime;
                 DebutIcon.SetActive(true);
-                useStamina = 20;
+                useStamina = 10;
             }
         }
         if (DebutDogTime == 0 || DebutDogTime <= 0)
         {
-            useStamina = 10;
+            useStamina = 3;
             DebutDogTime = 5.0f;
             hitDog = false;
             DebutIcon.SetActive(false);
         }
         else if (hitDog == false)
         {
-            useStamina = 10;
+            useStamina = 3;
         }
 
         if (Input.GetKey(KeyCode.E) && StaminaSlider.value < StaminaSlider.maxValue/2)
