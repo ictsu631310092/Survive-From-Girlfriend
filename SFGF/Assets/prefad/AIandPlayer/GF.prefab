@@ -131,6 +131,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e66de768f12b114eb63f171168d7883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameoverUI: {fileID: 0}
+  winnerUI: {fileID: 0}
+  PauseUI: {fileID: 0}
 --- !u!54 &5006987397948040362
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -198,7 +201,7 @@ MonoBehaviour:
   enemy: {fileID: 5637687602142275340}
   player: {fileID: 0}
   tenemy: {fileID: 5637687602101996752}
-  sfxshesay: {fileID: 8300000, guid: 3ecbcd7535fce27479dc9d51b3f48a9f, type: 3}
+  sfxshesay: {fileID: 8300000, guid: 5f6b4bf2e52b6ed4bbdc8306f3b23a3e, type: 3}
   sfxsheiscome: {fileID: 8300000, guid: c065be5b941594a4080429797d9157c6, type: 3}
   sfxAudioSource_shesay: {fileID: 0}
   sfxAudioSource_shecome: {fileID: 0}

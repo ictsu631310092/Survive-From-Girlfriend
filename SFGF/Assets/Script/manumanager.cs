@@ -51,6 +51,9 @@ public class manumanager : MonoBehaviour
     }
     public void RestarGame()
     {
+        GameoverUI.SetActive(false);
+        winnerUI.SetActive(false);
+        PauseUI.SetActive(false);
         time = 0.0f;
         Time.timeScale = 1;
         Cursor.visible = false;
@@ -63,9 +66,6 @@ public class manumanager : MonoBehaviour
         itemmanager.haveWater = false;
         itemmanager.haveWater2 = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        GameoverUI.SetActive(false);
-        winnerUI.SetActive(false);
-        PauseUI.SetActive(false);
     }
     public void backgame()
     {
@@ -78,10 +78,12 @@ public class manumanager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        OpenGameoverUI = false;
+        OpenwinnerUI = false;
         GameoverUI.SetActive(false);
         winnerUI.SetActive(false);
-        //ESCUI.SetActive(true);
         PauseUI.SetActive(false);
+        //ESCUI.SetActive(true);
     }
 
     // Update is called once per frame

@@ -18,6 +18,8 @@ public class itemmanager : MonoBehaviour
 
     void Start()
     {
+        //haveChocolate = true;
+        //haveDoll = true;
         //haveWater = true;
         //haveWater2 = true;
         moneyText = GetComponent<Text>();

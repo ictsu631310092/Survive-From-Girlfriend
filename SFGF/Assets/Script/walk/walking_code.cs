@@ -83,7 +83,7 @@ public class walking_code : MonoBehaviour
             runningIcon.SetActive(false);
             runningSpeed = 7.5f;
         }
-        if (StaminaSlider.value + 5 < StaminaSlider.maxValue)
+        if (StaminaSlider.value + 5 < StaminaSlider.maxValue && Time.timeScale == 1)
         {
             StaminaSlider.value += forceStamina;
         }
@@ -95,14 +95,19 @@ public class walking_code : MonoBehaviour
                 DebutIcon.SetActive(true);
                 useStamina = 20;
             }
-            if (DebutDogTime == 0 || DebutDogTime <=0)
-            {
-                useStamina = 10;
-                DebutDogTime = 5.0f;
-                hitDog = false;
-                DebutIcon.SetActive(false);
-            }
         }
+        if (DebutDogTime == 0 || DebutDogTime <= 0)
+        {
+            useStamina = 10;
+            DebutDogTime = 5.0f;
+            hitDog = false;
+            DebutIcon.SetActive(false);
+        }
+        else if (hitDog == false)
+        {
+            useStamina = 10;
+        }
+
         if (Input.GetKey(KeyCode.E) && StaminaSlider.value < StaminaSlider.maxValue/2)
         {
             if (itemmanager.haveWater == true)

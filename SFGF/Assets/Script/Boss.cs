@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
-
-
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.tag == "Player")
