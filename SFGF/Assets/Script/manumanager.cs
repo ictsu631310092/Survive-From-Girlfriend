@@ -8,7 +8,6 @@ public class manumanager : MonoBehaviour
 {
     public GameObject PauseUI;
     public GameObject ESCUI;
-    public GameObject HowToPlayUI;
     public GameObject CreditsUI;
     float time = 0.0f;
     Text timeText;
@@ -24,16 +23,8 @@ public class manumanager : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("PlayGame");
+        SceneManager.LoadScene("1");
         Time.timeScale = 1; //เวลาในเกมเดินต่อ
-    }
-    public void openHowToPlay()
-    {
-        HowToPlayUI.SetActive(true);
-    }
-    public void closeHowToPlay()
-    {
-        HowToPlayUI.SetActive(false);
     }
     public void openCreditsUI()
     {
