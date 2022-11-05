@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class manumanager : MonoBehaviour
 {
     public GameObject PauseUI;
-    public GameObject ESCUI;
     public GameObject CreditsUI;
     float time = 0.0f;
     Text timeText;
@@ -74,16 +73,11 @@ public class manumanager : MonoBehaviour
         GameoverUI.SetActive(false);
         winnerUI.SetActive(false);
         PauseUI.SetActive(false);
-        //ESCUI.SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            ESCUI.SetActive(false);
-        }
         time = time + Time.deltaTime;
         timeText = GetComponent<Text>();
         timeText.text = "time : " + time.ToString("f1");

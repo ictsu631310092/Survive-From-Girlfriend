@@ -29,7 +29,7 @@ public class itemmanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moneyText.text = "x " + moneyhave;
+        moneyText.text = "money : " + moneyhave;
         if (haveChocolate == true)
         {
             chocolate.SetActive(true);
